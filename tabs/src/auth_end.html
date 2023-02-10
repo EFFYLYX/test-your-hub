@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <script src="./app.js"></script>
+ </head>
+
+<body>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const result = params.get('code');
+    const { authId, method, hubAuthCallbackUrl } = JSON.parse(params.get('state'));
+    if (method === 'deeplink') {
+      if (!hubAuthCallbackUrl) {
+        window.location.href = `msteams://teams.microsoft.com/l/auth-callback?authId=${authId}&result=${result}`
+      } else {
+        window.location.href = `${decodeURIComponent(hubAuthCallbackUrl)}?authId=${authId}&result=${result}`
+      }
+    } else {
+      microsoftTeams.initialize();
+      microsoftTeams.authentication.notifySuccess(result);      
+    }
+  </script>
+</body>
+
+</html>

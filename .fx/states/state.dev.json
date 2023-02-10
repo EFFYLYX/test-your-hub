@@ -1,0 +1,39 @@
+{
+    "solution": {
+        "teamsAppTenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "provisionSucceeded": true,
+        "subscriptionId": "49409aa8-3297-4f9c-8400-80a1fae76073",
+        "subscriptionName": "Outlook Web (Playground)",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "needCreateResourceGroup": false,
+        "resourceGroupName": "outlook_ios_metaos",
+        "location": "japanwest",
+        "resourceNameSuffix": "c28d50"
+    },
+    "fx-resource-appstudio": {
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "teamsAppId": "0b5dd87a-bdb9-4ee2-81d8-4dc365407fa2"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "c2426a4f-539a-4857-8aad-60b4494fc35e",
+        "clientSecret": "{{fx-resource-aad-app-for-teams.clientSecret}}",
+        "objectId": "041493aa-1a80-4a92-9f5b-62a773fbe0ea",
+        "oauth2PermissionScopeId": "ccb3b6c4-62db-4f49-846a-5339ad067f83",
+        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47",
+        "applicationIdUris": "api://helloworlddevc28d50tab.z31.web.core.windows.net/c2426a4f-539a-4857-8aad-60b4494fc35e",
+        "frontendEndpoint": "https://helloworlddevc28d50tab.z31.web.core.windows.net"
+    },
+    "fx-resource-frontend-hosting": {
+        "indexPath": "/index.html#",
+        "domain": "helloworlddevc28d50tab.z31.web.core.windows.net",
+        "endpoint": "https://helloworlddevc28d50tab.z31.web.core.windows.net",
+        "storageResourceId": "/subscriptions/49409aa8-3297-4f9c-8400-80a1fae76073/resourceGroups/outlook_ios_metaos/providers/Microsoft.Storage/storageAccounts/helloworlddevc28d50tab"
+    },
+    "fx-resource-identity": {
+        "identityName": "helloworlddevc28d50",
+        "identityResourceId": "/subscriptions/49409aa8-3297-4f9c-8400-80a1fae76073/resourceGroups/outlook_ios_metaos/providers/Microsoft.ManagedIdentity/userAssignedIdentities/helloworlddevc28d50",
+        "identityClientId": "2152fc92-8e49-4497-929b-169ea962443f"
+    }
+}
